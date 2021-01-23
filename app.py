@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db' #four forward slashes indicate absolute path, 3 indicate relative path. it is relative so there is't a definite location, the interpreter searches for any file containing what it needs.
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db' #four forward slashes indicate absolute path, 3 indicate relative path. it is relative so there isn't a definite location, the interpreter searches for any file containing what it needs.
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
